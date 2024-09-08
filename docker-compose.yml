@@ -8,7 +8,9 @@ services:
     ports:
       - 5000:5000
   data-extract-container:
-    image: apache/airflow:2.10.0-python3.10
+    build:  # This should point to your custom Dockerfile
+      context: .  # Assuming Dockerfile is in the root
+      dockerfile: Dockerfile
     volumes:
       - ./dags:/opt/airflow/dags
       - ./airflow-data:/var/tmp
