@@ -4,7 +4,7 @@
 
   - Cài đặt Python 3.10 trở lên
   - Cài đặt Docker.
-  - Cài đặt các dependenciesn cho airflow bằng Dockerfile.
+  - Cài đặt các dependencies cho airflow bằng Dockerfile.
     pip install -r requirements.txt
   
 ## 2. Chạy chương trình:
